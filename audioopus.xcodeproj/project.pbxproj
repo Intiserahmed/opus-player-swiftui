@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D972140495918517620DB0C /* Pods_audioopus_audioopusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283088B574A0AE6DBF04BD1B /* Pods_audioopus_audioopusUITests.framework */; };
+		60F92B77EEA0E68A219317D1 /* Pods_audioopus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24ADC0A98450BB9023E5572 /* Pods_audioopus.framework */; };
+		9B5A30E02C3CE13C0059C90D /* SwiftOGG in Frameworks */ = {isa = PBXBuildFile; productRef = 9B5A30DF2C3CE13C0059C90D /* SwiftOGG */; };
+		9B85B9F52C3ADEB0002866A6 /* intiser.opus in Resources */ = {isa = PBXBuildFile; fileRef = 9B85B9F42C3ADEB0002866A6 /* intiser.opus */; };
+		9B8FDDE12C3A4B96008E4AB9 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8FDDE02C3A4B96008E4AB9 /* AudioManager.swift */; };
+		9B8FDDE62C3A4F09008E4AB9 /* Copus in Frameworks */ = {isa = PBXBuildFile; productRef = 9B8FDDE52C3A4F09008E4AB9 /* Copus */; };
+		9B8FDDE82C3A4F09008E4AB9 /* Opus in Frameworks */ = {isa = PBXBuildFile; productRef = 9B8FDDE72C3A4F09008E4AB9 /* Opus */; };
+		9BD75F272C37E5980032F6EC /* audioopusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD75F262C37E5980032F6EC /* audioopusApp.swift */; };
+		9BD75F292C37E5980032F6EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD75F282C37E5980032F6EC /* ContentView.swift */; };
+		9BD75F2B2C37E5990032F6EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BD75F2A2C37E5990032F6EC /* Assets.xcassets */; };
+		9BD75F2E2C37E5990032F6EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BD75F2D2C37E5990032F6EC /* Preview Assets.xcassets */; };
+		9BD75F382C37E5990032F6EC /* audioopusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD75F372C37E5990032F6EC /* audioopusTests.swift */; };
+		9BD75F422C37E5990032F6EC /* audioopusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD75F412C37E5990032F6EC /* audioopusUITests.swift */; };
+		9BD75F442C37E5990032F6EC /* audioopusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD75F432C37E5990032F6EC /* audioopusUITestsLaunchTests.swift */; };
+		ABDBE9D25ED33400006390DB /* Pods_audioopusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA25992D993B1A111D2CFCB /* Pods_audioopusTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BD75F342C37E5990032F6EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BD75F1B2C37E5980032F6EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BD75F222C37E5980032F6EC;
+			remoteInfo = audioopus;
+		};
+		9BD75F3E2C37E5990032F6EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BD75F1B2C37E5980032F6EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BD75F222C37E5980032F6EC;
+			remoteInfo = audioopus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DA25992D993B1A111D2CFCB /* Pods_audioopusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_audioopusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DCA36AA4598552818C4F8F6 /* Pods-audioopusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-audioopusTests.debug.xcconfig"; path = "Target Support Files/Pods-audioopusTests/Pods-audioopusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		283088B574A0AE6DBF04BD1B /* Pods_audioopus_audioopusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_audioopus_audioopusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4816EEA1CFFCCE69A5BD664E /* Pods-audioopus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-audioopus.debug.xcconfig"; path = "Target Support Files/Pods-audioopus/Pods-audioopus.debug.xcconfig"; sourceTree = "<group>"; };
+		4D12BD6FA1F27D01A623D5F4 /* Pods-audioopus-audioopusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-audioopus-audioopusUITests.release.xcconfig"; path = "Target Support Files/Pods-audioopus-audioopusUITests/Pods-audioopus-audioopusUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8363BF14EB213E4E1C55AC3C /* Pods-audioopusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-audioopusTests.release.xcconfig"; path = "Target Support Files/Pods-audioopusTests/Pods-audioopusTests.release.xcconfig"; sourceTree = "<group>"; };
+		9B5A30E32C3CE8E30059C90D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9B85B9F42C3ADEB0002866A6 /* intiser.opus */ = {isa = PBXFileReference; lastKnownFileType = file; name = intiser.opus; path = "../../Downloads/archive_69295_qatest-vp-14422_2024-07-01_00-00-00_2024-07-01_23-59-59_8/intiser.opus"; sourceTree = "<group>"; };
+		9B8FDDE02C3A4B96008E4AB9 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		9BD75F232C37E5980032F6EC /* audioopus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = audioopus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BD75F262C37E5980032F6EC /* audioopusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audioopusApp.swift; sourceTree = "<group>"; };
+		9BD75F282C37E5980032F6EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9BD75F2A2C37E5990032F6EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BD75F2D2C37E5990032F6EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9BD75F332C37E5990032F6EC /* audioopusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = audioopusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BD75F372C37E5990032F6EC /* audioopusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audioopusTests.swift; sourceTree = "<group>"; };
+		9BD75F3D2C37E5990032F6EC /* audioopusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = audioopusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BD75F412C37E5990032F6EC /* audioopusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audioopusUITests.swift; sourceTree = "<group>"; };
+		9BD75F432C37E5990032F6EC /* audioopusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audioopusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D10F2AE93FC4A881C586DAF2 /* Pods-audioopus-audioopusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-audioopus-audioopusUITests.debug.xcconfig"; path = "Target Support Files/Pods-audioopus-audioopusUITests/Pods-audioopus-audioopusUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D24ADC0A98450BB9023E5572 /* Pods_audioopus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_audioopus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD32682F964561B49DAFA3E8 /* Pods-audioopus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-audioopus.release.xcconfig"; path = "Target Support Files/Pods-audioopus/Pods-audioopus.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BD75F202C37E5980032F6EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60F92B77EEA0E68A219317D1 /* Pods_audioopus.framework in Frameworks */,
+				9B8FDDE62C3A4F09008E4AB9 /* Copus in Frameworks */,
+				9B5A30E02C3CE13C0059C90D /* SwiftOGG in Frameworks */,
+				9B8FDDE82C3A4F09008E4AB9 /* Opus in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD75F302C37E5990032F6EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABDBE9D25ED33400006390DB /* Pods_audioopusTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD75F3A2C37E5990032F6EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D972140495918517620DB0C /* Pods_audioopus_audioopusUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BD75F1A2C37E5980032F6EC = {
+			isa = PBXGroup;
+			children = (
+				9BD75F252C37E5980032F6EC /* audioopus */,
+				9BD75F362C37E5990032F6EC /* audioopusTests */,
+				9BD75F402C37E5990032F6EC /* audioopusUITests */,
+				9BD75F242C37E5980032F6EC /* Products */,
+				E68C2F38A6C72BE86DD909FB /* Pods */,
+				D4A41DFC1C35C69F602465E5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9BD75F242C37E5980032F6EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BD75F232C37E5980032F6EC /* audioopus.app */,
+				9BD75F332C37E5990032F6EC /* audioopusTests.xctest */,
+				9BD75F3D2C37E5990032F6EC /* audioopusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BD75F252C37E5980032F6EC /* audioopus */ = {
+			isa = PBXGroup;
+			children = (
+				9B5A30E32C3CE8E30059C90D /* Info.plist */,
+				9BD75F262C37E5980032F6EC /* audioopusApp.swift */,
+				9BD75F282C37E5980032F6EC /* ContentView.swift */,
+				9B85B9F42C3ADEB0002866A6 /* intiser.opus */,
+				9BD75F2A2C37E5990032F6EC /* Assets.xcassets */,
+				9BD75F2C2C37E5990032F6EC /* Preview Content */,
+				9B8FDDE02C3A4B96008E4AB9 /* AudioManager.swift */,
+			);
+			path = audioopus;
+			sourceTree = "<group>";
+		};
+		9BD75F2C2C37E5990032F6EC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9BD75F2D2C37E5990032F6EC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9BD75F362C37E5990032F6EC /* audioopusTests */ = {
+			isa = PBXGroup;
+			children = (
+				9BD75F372C37E5990032F6EC /* audioopusTests.swift */,
+			);
+			path = audioopusTests;
+			sourceTree = "<group>";
+		};
+		9BD75F402C37E5990032F6EC /* audioopusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9BD75F412C37E5990032F6EC /* audioopusUITests.swift */,
+				9BD75F432C37E5990032F6EC /* audioopusUITestsLaunchTests.swift */,
+			);
+			path = audioopusUITests;
+			sourceTree = "<group>";
+		};
+		D4A41DFC1C35C69F602465E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D24ADC0A98450BB9023E5572 /* Pods_audioopus.framework */,
+				283088B574A0AE6DBF04BD1B /* Pods_audioopus_audioopusUITests.framework */,
+				0DA25992D993B1A111D2CFCB /* Pods_audioopusTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E68C2F38A6C72BE86DD909FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4816EEA1CFFCCE69A5BD664E /* Pods-audioopus.debug.xcconfig */,
+				FD32682F964561B49DAFA3E8 /* Pods-audioopus.release.xcconfig */,
+				D10F2AE93FC4A881C586DAF2 /* Pods-audioopus-audioopusUITests.debug.xcconfig */,
+				4D12BD6FA1F27D01A623D5F4 /* Pods-audioopus-audioopusUITests.release.xcconfig */,
+				1DCA36AA4598552818C4F8F6 /* Pods-audioopusTests.debug.xcconfig */,
+				8363BF14EB213E4E1C55AC3C /* Pods-audioopusTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BD75F222C37E5980032F6EC /* audioopus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BD75F472C37E5990032F6EC /* Build configuration list for PBXNativeTarget "audioopus" */;
+			buildPhases = (
+				4F30A249F4FB5A5BF9032BD2 /* [CP] Check Pods Manifest.lock */,
+				9BD75F1F2C37E5980032F6EC /* Sources */,
+				9BD75F202C37E5980032F6EC /* Frameworks */,
+				9BD75F212C37E5980032F6EC /* Resources */,
+				6DAEF989BB13B631EBCA2F11 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = audioopus;
+			packageProductDependencies = (
+				9B8FDDE52C3A4F09008E4AB9 /* Copus */,
+				9B8FDDE72C3A4F09008E4AB9 /* Opus */,
+				9B5A30DF2C3CE13C0059C90D /* SwiftOGG */,
+			);
+			productName = audioopus;
+			productReference = 9BD75F232C37E5980032F6EC /* audioopus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9BD75F322C37E5990032F6EC /* audioopusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BD75F4A2C37E5990032F6EC /* Build configuration list for PBXNativeTarget "audioopusTests" */;
+			buildPhases = (
+				F6298BDA402E829D717E486A /* [CP] Check Pods Manifest.lock */,
+				9BD75F2F2C37E5990032F6EC /* Sources */,
+				9BD75F302C37E5990032F6EC /* Frameworks */,
+				9BD75F312C37E5990032F6EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BD75F352C37E5990032F6EC /* PBXTargetDependency */,
+			);
+			name = audioopusTests;
+			productName = audioopusTests;
+			productReference = 9BD75F332C37E5990032F6EC /* audioopusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9BD75F3C2C37E5990032F6EC /* audioopusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BD75F4D2C37E5990032F6EC /* Build configuration list for PBXNativeTarget "audioopusUITests" */;
+			buildPhases = (
+				053F5C764161821F28773F69 /* [CP] Check Pods Manifest.lock */,
+				9BD75F392C37E5990032F6EC /* Sources */,
+				9BD75F3A2C37E5990032F6EC /* Frameworks */,
+				9BD75F3B2C37E5990032F6EC /* Resources */,
+				4097814687E5F32BCB9D9E37 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BD75F3F2C37E5990032F6EC /* PBXTargetDependency */,
+			);
+			name = audioopusUITests;
+			productName = audioopusUITests;
+			productReference = 9BD75F3D2C37E5990032F6EC /* audioopusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BD75F1B2C37E5980032F6EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					9BD75F222C37E5980032F6EC = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					9BD75F322C37E5990032F6EC = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 9BD75F222C37E5980032F6EC;
+					};
+					9BD75F3C2C37E5990032F6EC = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 9BD75F222C37E5980032F6EC;
+					};
+				};
+			};
+			buildConfigurationList = 9BD75F1E2C37E5980032F6EC /* Build configuration list for PBXProject "audioopus" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BD75F1A2C37E5980032F6EC;
+			packageReferences = (
+				9B8FDDE42C3A4F09008E4AB9 /* XCLocalSwiftPackageReference "../swift-opus" */,
+				9B5A30DE2C3CE13C0059C90D /* XCRemoteSwiftPackageReference "swift-ogg" */,
+			);
+			productRefGroup = 9BD75F242C37E5980032F6EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BD75F222C37E5980032F6EC /* audioopus */,
+				9BD75F322C37E5990032F6EC /* audioopusTests */,
+				9BD75F3C2C37E5990032F6EC /* audioopusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BD75F212C37E5980032F6EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BD75F2E2C37E5990032F6EC /* Preview Assets.xcassets in Resources */,
+				9BD75F2B2C37E5990032F6EC /* Assets.xcassets in Resources */,
+				9B85B9F52C3ADEB0002866A6 /* intiser.opus in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD75F312C37E5990032F6EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD75F3B2C37E5990032F6EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		053F5C764161821F28773F69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-audioopus-audioopusUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4097814687E5F32BCB9D9E37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-audioopus-audioopusUITests/Pods-audioopus-audioopusUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-audioopus-audioopusUITests/Pods-audioopus-audioopusUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-audioopus-audioopusUITests/Pods-audioopus-audioopusUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F30A249F4FB5A5BF9032BD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-audioopus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DAEF989BB13B631EBCA2F11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-audioopus/Pods-audioopus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-audioopus/Pods-audioopus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-audioopus/Pods-audioopus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6298BDA402E829D717E486A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-audioopusTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BD75F1F2C37E5980032F6EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BD75F292C37E5980032F6EC /* ContentView.swift in Sources */,
+				9B8FDDE12C3A4B96008E4AB9 /* AudioManager.swift in Sources */,
+				9BD75F272C37E5980032F6EC /* audioopusApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD75F2F2C37E5990032F6EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BD75F382C37E5990032F6EC /* audioopusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD75F392C37E5990032F6EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BD75F442C37E5990032F6EC /* audioopusUITestsLaunchTests.swift in Sources */,
+				9BD75F422C37E5990032F6EC /* audioopusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BD75F352C37E5990032F6EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BD75F222C37E5980032F6EC /* audioopus */;
+			targetProxy = 9BD75F342C37E5990032F6EC /* PBXContainerItemProxy */;
+		};
+		9BD75F3F2C37E5990032F6EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BD75F222C37E5980032F6EC /* audioopus */;
+			targetProxy = 9BD75F3E2C37E5990032F6EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9BD75F452C37E5990032F6EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9BD75F462C37E5990032F6EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BD75F482C37E5990032F6EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4816EEA1CFFCCE69A5BD664E /* Pods-audioopus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"audioopus/Preview Content\"";
+				DEVELOPMENT_TEAM = S76GJ3LVAF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = audioopus/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "For app sound";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intiserahmed.audioopus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9BD75F492C37E5990032F6EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD32682F964561B49DAFA3E8 /* Pods-audioopus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"audioopus/Preview Content\"";
+				DEVELOPMENT_TEAM = S76GJ3LVAF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = audioopus/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "For app sound";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intiserahmed.audioopus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9BD75F4B2C37E5990032F6EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DCA36AA4598552818C4F8F6 /* Pods-audioopusTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S76GJ3LVAF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intiserahmed.audioopusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/audioopus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/audioopus";
+			};
+			name = Debug;
+		};
+		9BD75F4C2C37E5990032F6EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8363BF14EB213E4E1C55AC3C /* Pods-audioopusTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S76GJ3LVAF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intiserahmed.audioopusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/audioopus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/audioopus";
+			};
+			name = Release;
+		};
+		9BD75F4E2C37E5990032F6EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D10F2AE93FC4A881C586DAF2 /* Pods-audioopus-audioopusUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S76GJ3LVAF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intiserahmed.audioopusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = audioopus;
+			};
+			name = Debug;
+		};
+		9BD75F4F2C37E5990032F6EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D12BD6FA1F27D01A623D5F4 /* Pods-audioopus-audioopusUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S76GJ3LVAF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intiserahmed.audioopusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = audioopus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BD75F1E2C37E5980032F6EC /* Build configuration list for PBXProject "audioopus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BD75F452C37E5990032F6EC /* Debug */,
+				9BD75F462C37E5990032F6EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BD75F472C37E5990032F6EC /* Build configuration list for PBXNativeTarget "audioopus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BD75F482C37E5990032F6EC /* Debug */,
+				9BD75F492C37E5990032F6EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BD75F4A2C37E5990032F6EC /* Build configuration list for PBXNativeTarget "audioopusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BD75F4B2C37E5990032F6EC /* Debug */,
+				9BD75F4C2C37E5990032F6EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BD75F4D2C37E5990032F6EC /* Build configuration list for PBXNativeTarget "audioopusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BD75F4E2C37E5990032F6EC /* Debug */,
+				9BD75F4F2C37E5990032F6EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		9B8FDDE42C3A4F09008E4AB9 /* XCLocalSwiftPackageReference "../swift-opus" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../swift-opus";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9B5A30DE2C3CE13C0059C90D /* XCRemoteSwiftPackageReference "swift-ogg" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/element-hq/swift-ogg.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9B5A30DF2C3CE13C0059C90D /* SwiftOGG */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B5A30DE2C3CE13C0059C90D /* XCRemoteSwiftPackageReference "swift-ogg" */;
+			productName = SwiftOGG;
+		};
+		9B8FDDE52C3A4F09008E4AB9 /* Copus */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Copus;
+		};
+		9B8FDDE72C3A4F09008E4AB9 /* Opus */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Opus;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9BD75F1B2C37E5980032F6EC /* Project object */;
+}
